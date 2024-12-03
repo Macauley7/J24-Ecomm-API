@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://ecommerce-omega-three-31.vercel.app",
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization", "auth-token"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
@@ -42,7 +42,7 @@ const swaggerOptions = {
       },
       servers: [
         {
-          url: "http://localhost:8000",
+          url: "*",
         },
       ],
     },
